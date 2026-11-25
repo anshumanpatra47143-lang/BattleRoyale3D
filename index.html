@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>BattleRoyale3D - Lobby</title>
+</head>
+<body>
+<div id="game"></div>
+
+<div class="topbar">
+  <div class="brand">BATTLE<span>ROYALE</span> 3D</div>
+  <div class="profile">👤 PLAYER <b>LV. 01</b></div>
+</div>
+
+<div class="left-panel">
+  <div class="panel-title">GAME MENU</div>
+  <button class="menu active">🏠 HOME</button>
+  <button class="menu">👥 FRIENDS</button>
+  <button class="menu">🏆 RANK</button>
+  <button class="menu">⚙ SETTINGS</button>
+</div>
+
+<div class="right-panel">
+  <div class="panel-title">TEAM LOBBY</div>
+  <div class="slot">👤 YOU <span>ONLINE</span></div>
+  <div class="slot">＋ INVITE PLAYER</div>
+  <div class="slot">＋ INVITE PLAYER</div>
+  <div class="slot">＋ INVITE PLAYER</div>
+</div>
+
+<div class="bottom-panel">
+  <div class="modes">
+    <button class="mode active" data-mode="Battle Royale">BATTLE ROYALE</button>
+    <button class="mode" data-mode="Training">TRAINING</button>
+    <button class="mode" data-mode="Survival">SURVIVAL</button>
+  </div>
+  <button id="start">START MATCH</button>
+  <div id="status">READY TO PLAY</div>
+</div>
+
+<div id="toast"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{box-sizing:border-box}
+body{margin:0;background:#10182c;color:white;font-family:Arial,sans-serif;overflow:hidden}
+#game{position:fixed;inset:0}
+#game canvas{display:block;width:100%;height:100%}
+.topbar{position:fixed;top:0;left:0;right:0;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#080d19dd,transparent)}
+.brand{font-size:22px;font-weight:900;letter-spacing:2px}
+.brand span{color:#21aaff}
+.profile{background:#17263cdd;border:1px solid #47718e;padding:11px 16px;border-radius:8px;font-size:12px}
+.profile b{color:#29b7ff;margin-left:8px}
+.left-panel,.right-panel{position:fixed;top:25%;width:190px;padding:14px;background:#0c1729c9;border:1px solid #42617c;border-radius:10px;backdrop-filter:blur(10px)}
+.left-panel{left:18px}
+.right-panel{right:18px}
+.panel-title{font-size:12px;letter-spacing:2px;color:#42baff;margin-bottom:12px;font-weight:bold}
+.menu,.slot{display:block;width:100%;margin:8px 0;padding:12px;text-align:left;background:#1b2c43;color:#dceaff;border:1px solid #354e68;border-radius:6px;font-size:12px}
+.menu.active,.mode.active{background:#087cbe;color:white;border-color:#48c5ff}
+.slot{font-size:11px}
+.slot span{float:right;color:#3cdb9c}
+.bottom-panel{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);width:min(500px,90%);text-align:center;background:#091526dd;border:1px solid #3e6380;border-radius:12px;padding:12px;backdrop-filter:blur(12px)}
+.modes{display:flex;gap:7px;margin-bottom:10px}
+.mode{flex:1;padding:12px 5px;background:#1b2c43;color:#c9d9eb;border:1px solid #354e68;border-radius:6px;font-size:10px;font-weight:bold}
+#start{width:100%;padding:16px;border:0;border-radius:7px;background:linear-gradient(90deg,#087ac0,#13b6ec);color:white;font-weight:900;font-size:18px;letter-spacing:2px}
+#status{font-size:10px;color:#81cfff;margin-top:9px;letter-spacing:2px}
+#toast{display:none;position:fixed;top:85px;left:50%;transform:translateX(-50%);background:#132a40;border:1px solid #36aaff;padding:12px 20px;border-radius:8px;font-size:12px;max-width:90%;text-align:center}
+@media(max-width:600px){
+ .topbar{padding:12px}
+ .brand{font-size:15px}
+ .profile{font-size:9px;padding:9px}
+ .left-panel{top:100px;left:8px;width:125px;padding:8px}
+ .right-panel{top:100px;right:8px;width:135px;padding:8px}
+ .menu,.slot{padding:9px 6px;font-size:9px}
+ .panel-title{font-size:9px}
+ .bottom-panel{bottom:10px;width:94%;padding:9px}
+ .mode{font-size:8px;padding:10px 2px}
+ #start{font-size:16px;padding:14px}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "battleroyale3d",
+  "version": "1.0.0",
+  "description": "Realword based game devlopment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshumanpatra47143-lang/BattleRoyale3D.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anshumanpatra47143-lang/BattleRoyale3D/issues"
+  },
+  "homepage": "https://github.com/anshumanpatra47143-lang/BattleRoyale3D#readme",
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}
